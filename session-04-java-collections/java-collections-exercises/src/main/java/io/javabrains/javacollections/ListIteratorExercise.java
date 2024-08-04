@@ -5,6 +5,7 @@ Print the list in forward and reverse order using iterators only
 */
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class ListIteratorExercise {
 
@@ -16,5 +17,10 @@ public class ListIteratorExercise {
         list.add("Item 4");
         list.add("Item 5");
 
-    }
+        Iterator<String> itr = list.iterator();
+
+        while(itr.hasNext()){
+            System.out.println(itr.next());
+        }
+    }   
 }
